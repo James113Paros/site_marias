@@ -33,7 +33,6 @@
       overflow: hidden;
     }
 
-    /* ── NOISE OVERLAY ── */
     body::before {
       content: '';
       position: fixed; inset: 0;
@@ -43,7 +42,6 @@
       opacity: 0.6;
     }
 
-    /* ── PAGES ── */
     .page {
       position: fixed; inset: 0;
       display: flex; flex-direction: column;
@@ -65,7 +63,6 @@
       transform: translateY(-18px);
     }
 
-    /* ── NAV HEADER ── */
     .nav-header {
       position: fixed; top: 0; left: 0; right: 0;
       display: flex; align-items: center; justify-content: flex-end;
@@ -83,7 +80,6 @@
       transition: all 0.3s ease;
     }
 
-    /* ── DRAWER MENU ── */
     .drawer {
       position: fixed; inset: 0;
       background: var(--olive);
@@ -119,30 +115,21 @@
       text-decoration: none; font-size: 18px;
       transition: color 0.2s;
     }
-    .drawer-social a:hover { color: var(--cream); }
 
-    /* ══════════════════════════════
-       PAGE 1 — HOME
-    ══════════════════════════════ */
-    #home {
-      background: var(--bg);
-      gap: 0;
-    }
+    #home { background: var(--bg); gap: 0; }
     .home-circles {
       position: relative;
       width: 200px; height: 180px;
       margin-bottom: 28px;
     }
     .circle-filled {
-      position: absolute;
-      top: 0; left: 0;
+      position: absolute; top: 0; left: 0;
       width: 140px; height: 140px;
       border-radius: 50%;
       background: var(--olive);
     }
     .circle-outline {
-      position: absolute;
-      top: 24px; left: 60px;
+      position: absolute; top: 24px; left: 60px;
       width: 110px; height: 110px;
       border-radius: 50%;
       border: 1.5px solid var(--dark);
@@ -167,10 +154,7 @@
       text-align: center;
       margin-bottom: 32px;
     }
-    .home-icons {
-      display: flex; gap: 28px;
-      align-items: center;
-    }
+    .home-icons { display: flex; gap: 28px; align-items: center; }
     .home-icons a {
       color: var(--dark); text-decoration: none;
       font-size: 20px;
@@ -178,27 +162,12 @@
     }
     .home-icons a:hover { color: var(--olive-mid); transform: translateY(-2px); }
 
-    /* ══════════════════════════════
-       PAGE 2 — ΚΑΛΩΣΗΡΘΕΣ
-    ══════════════════════════════ */
-    #welcome {
-      background: var(--cream);
-      gap: 0;
-      text-align: center;
-    }
+    #welcome { background: var(--cream); gap: 0; text-align: center; }
     .welcome-label {
       font-family: var(--font-sans);
       font-size: 10px; letter-spacing: 0.25em;
       text-transform: uppercase; color: var(--muted);
       margin-bottom: 20px;
-    }
-    .welcome-heading {
-      font-family: var(--font-serif);
-      font-size: clamp(30px, 9vw, 42px);
-      font-weight: 300; font-style: italic;
-      color: var(--dark);
-      line-height: 1.2;
-      margin-bottom: 28px;
     }
     .welcome-divider {
       width: 40px; height: 1px;
@@ -207,33 +176,14 @@
     }
     .welcome-text {
       font-family: var(--font-serif);
-      font-size: clamp(16px, 4.5vw, 19px);
+      font-size: clamp(15px, 4vw, 18px);
       font-weight: 300;
       line-height: 1.85;
       color: var(--olive);
       max-width: 420px;
     }
-    .welcome-cta {
-      margin-top: 36px;
-      display: inline-block;
-      font-family: var(--font-sans);
-      font-size: 11px; letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--dark); text-decoration: none;
-      border-bottom: 1px solid var(--accent);
-      padding-bottom: 3px;
-      transition: color 0.2s, border-color 0.2s;
-    }
-    .welcome-cta:hover { color: var(--olive); border-color: var(--olive); }
 
-    /* ══════════════════════════════
-       PAGE 3 — ΠΛΗΡΟΦΟΡΙΕΣ
-    ══════════════════════════════ */
-    #info {
-      background: var(--bg);
-      justify-content: flex-start;
-      padding-top: 90px;
-    }
+    #info { background: var(--bg); justify-content: flex-start; padding-top: 90px; }
     .info-title {
       font-family: var(--font-serif);
       font-size: clamp(22px, 6vw, 28px);
@@ -243,13 +193,8 @@
       margin-bottom: 36px;
       align-self: flex-start;
     }
-    .info-items {
-      display: flex; flex-direction: column; gap: 28px;
-      width: 100%; max-width: 420px;
-    }
-    .info-item {
-      display: flex; align-items: flex-start; gap: 18px;
-    }
+    .info-items { display: flex; flex-direction: column; gap: 28px; width: 100%; max-width: 420px; }
+    .info-item { display: flex; align-items: flex-start; gap: 18px; }
     .info-icon {
       flex-shrink: 0;
       width: 36px; height: 36px;
@@ -259,57 +204,16 @@
       font-size: 15px; color: var(--olive);
       margin-top: 2px;
     }
-    .info-text { font-family: var(--font-sans); }
-    .info-text p {
-      font-size: 13px; font-weight: 300;
-      color: var(--muted); line-height: 1.5;
-    }
-    .info-text strong {
-      display: block;
-      font-size: 14px; font-weight: 500;
-      color: var(--dark); margin-top: 3px;
-      letter-spacing: 0.01em;
-    }
+    .info-text p { font-size: 13px; font-weight: 300; color: var(--muted); line-height: 1.5; }
+    .info-text strong { display: block; font-size: 14px; font-weight: 500; color: var(--dark); margin-top: 3px; }
 
-    /* ══════════════════════════════
-       PAGE 4 — QR CODE
-    ══════════════════════════════ */
-    #qr-page {
-      background: var(--cream);
-      gap: 24px;
-      text-align: center;
-    }
-    .qr-label {
-      font-family: var(--font-sans);
-      font-size: 10px; letter-spacing: 0.25em;
-      text-transform: uppercase; color: var(--muted);
-    }
-    .qr-heading {
-      font-family: var(--font-serif);
-      font-size: clamp(22px, 6vw, 28px);
-      font-weight: 300; color: var(--dark);
-    }
-    #qrcode {
-      padding: 16px;
-      background: white;
-      border-radius: 4px;
-      display: inline-block;
-    }
-    .qr-url {
-      font-family: var(--font-sans);
-      font-size: 12px; color: var(--muted);
-      word-break: break-all;
-      max-width: 300px;
-    }
-    .qr-note {
-      font-family: var(--font-serif); font-style: italic;
-      font-size: 14px; color: var(--olive);
-      max-width: 300px; line-height: 1.6;
-    }
+    #qr-page { background: var(--cream); gap: 24px; text-align: center; }
+    .qr-label { font-family: var(--font-sans); font-size: 10px; letter-spacing: 0.25em; text-transform: uppercase; color: var(--muted); }
+    .qr-heading { font-family: var(--font-serif); font-size: clamp(22px, 6vw, 28px); font-weight: 300; color: var(--dark); }
+    #qrcode { padding: 16px; background: white; border-radius: 4px; display: inline-block; }
+    .qr-url { font-family: var(--font-sans); font-size: 12px; color: var(--muted); word-break: break-all; max-width: 300px; }
+    .qr-note { font-family: var(--font-serif); font-style: italic; font-size: 14px; color: var(--olive); max-width: 300px; line-height: 1.6; }
 
-    /* ══════════════════════════════
-       FOOTER BAR (bottom social)
-    ══════════════════════════════ */
     .footer-bar {
       position: fixed; bottom: 0; left: 0; right: 0;
       display: flex; justify-content: center; gap: 32px;
@@ -319,13 +223,9 @@
       backdrop-filter: blur(8px);
       z-index: 400;
     }
-    .footer-bar a {
-      color: var(--muted); font-size: 17px; text-decoration: none;
-      transition: color 0.2s, transform 0.2s;
-    }
+    .footer-bar a { color: var(--muted); font-size: 17px; text-decoration: none; transition: color 0.2s, transform 0.2s; }
     .footer-bar a:hover { color: var(--olive); transform: translateY(-2px); }
 
-    /* animations */
     @keyframes fadeUp {
       from { opacity:0; transform: translateY(20px); }
       to   { opacity:1; transform: translateY(0); }
@@ -333,14 +233,11 @@
     .page.active .home-circles,
     .page.active .home-name,
     .page.active .home-title,
-    .page.active .home-icons {
-      animation: fadeUp 0.6s ease both;
-    }
+    .page.active .home-icons { animation: fadeUp 0.6s ease both; }
     .page.active .home-name   { animation-delay: 0.1s; }
     .page.active .home-title  { animation-delay: 0.2s; }
     .page.active .home-icons  { animation-delay: 0.3s; }
 
-    /* scrollbar */
     ::-webkit-scrollbar { width: 4px; }
     ::-webkit-scrollbar-track { background: transparent; }
     ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 2px; }
@@ -348,14 +245,12 @@
 </head>
 <body>
 
-<!-- NAV HEADER -->
 <header class="nav-header">
   <button class="hamburger" onclick="openDrawer()" aria-label="Μενού">
     <span></span><span></span><span></span>
   </button>
 </header>
 
-<!-- DRAWER MENU -->
 <div class="drawer" id="drawer">
   <button class="drawer-close" onclick="closeDrawer()">✕</button>
   <nav>
@@ -364,14 +259,8 @@
     <a href="#" onclick="goTo('info'); closeDrawer()">Πληροφορίες</a>
     <a href="#" onclick="goTo('qr-page'); closeDrawer()">QR Code</a>
   </nav>
-  <div class="drawer-social">
-    <a href="tel:+30" title="Τηλέφωνο">📞</a>
-    <a href="mailto:" title="Email">✉</a>
-    <a href="https://instagram.com" target="_blank" title="Instagram">◎</a>
-  </div>
 </div>
 
-<!-- ══ PAGE 1: HOME ══ -->
 <section class="page active" id="home">
   <div class="home-circles">
     <div class="circle-filled"></div>
@@ -380,75 +269,56 @@
   <h1 class="home-name">Μαρία Ταμπρατζή</h1>
   <p class="home-title">Ψυχολόγος · Ψυχοθεραπεύτρια</p>
   <div class="home-icons">
-    <a href="tel:+30" title="Τηλέφωνο">
+    <a href="tel:+306982835588" title="Τηλέφωνο">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.56a16 16 0 0 0 5.55 5.55l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
     </a>
-    <a href="mailto:" title="Email">
+    <a href="mailto:mariajtamp@gmail.com" title="Email">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
     </a>
-    <a href="https://instagram.com" target="_blank" title="Instagram">
+    <a href="https://www.instagram.com/maria.tampratzi?igsh=MW5tNzBpY3d1YThjdg==" target="_blank" title="Instagram">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
     </a>
   </div>
 </section>
 
-<!-- ══ PAGE 2: ΚΑΛΩΣΗΡΘΕΣ ══ -->
 <section class="page" id="welcome">
   <p class="welcome-label">Καλώς ήρθατε</p>
-  <h2 class="welcome-heading">Ένας χώρος για εσάς</h2>
   <div class="welcome-divider"></div>
-
+  <p class="welcome-text">Η θεραπεία ξεκινά εκεί όπου νιώθουμε πως μπορούμε πραγματικά να ακουστούμε.</p>
+  <p class="welcome-text" style="margin-top:18px">Μέσα από μια σχέση που βασίζεται στην εμπιστοσύνη, την αποδοχή και τον σεβασμό, δημιουργούνται οι συνθήκες για μια ουσιαστική επαφή με όσα δυσκολεύουν, πληγώνουν ή απασχολούν.</p>
+  <p class="welcome-text" style="margin-top:18px">Σε αυτόν τον χώρο, κάθε σκέψη, συναίσθημα ή δυσκολία μπορεί να εκφραστεί με ελευθερία και στον δικό της χρόνο, διαμορφώνοντας το θεραπευτικό ταξίδι σε μια κοινή πορεία που επιτρέπει μεγαλύτερη κατανόηση, περισσότερη ελευθερία και βαθύτερη σύνδεση με τον εαυτό και τους άλλους.</p>
 </section>
 
-<!-- ══ PAGE 3: ΠΛΗΡΟΦΟΡΙΕΣ ══ -->
 <section class="page" id="info">
   <h2 class="info-title">Πληροφορίες</h2>
   <div class="info-items">
-
     <div class="info-item">
       <div class="info-icon">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
       </div>
-      <div class="info-text">
-        <p>Διάρκεια συνεδρίας</p>
-        <strong>45 λεπτά</strong>
-      </div>
+      <div class="info-text"><p>Διάρκεια συνεδρίας</p><strong>45 λεπτά</strong></div>
     </div>
-
     <div class="info-item">
       <div class="info-icon">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
       </div>
-      <div class="info-text">
-        <p>Η συνεδρία πραγματοποιείται</p>
-        <strong>Online</strong>
-      </div>
+      <div class="info-text"><p>Η συνεδρία πραγματοποιείται</p><strong>Online</strong></div>
     </div>
-
     <div class="info-item">
       <div class="info-icon">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.56a16 16 0 0 0 5.55 5.55l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
       </div>
-      <div class="info-text">
-        <p>Για πληροφορίες ή κράτηση, μπορείτε να επικοινωνήσετε μαζί μου</p>
-        <strong>Τηλεφωνικά</strong>
-      </div>
+      <div class="info-text"><p>Για πληροφορίες ή κράτηση, μπορείτε να επικοινωνήσετε μαζί μου</p><strong>Τηλεφωνικά</strong></div>
     </div>
-
     <div class="info-item">
       <div class="info-icon">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
       </div>
-      <div class="info-text">
-        <p>Διαθέσιμες ώρες</p>
-        <strong>Κατόπιν συνεννόησης</strong>
-      </div>
+      <div class="info-text"><p>Διαθέσιμες ώρες</p><strong>Κατόπιν συνεννόησης</strong></div>
     </div>
-
   </div>
 </section>
 
-<!-- ══ PAGE 4: QR CODE ══ -->
 <section class="page" id="qr-page">
   <p class="qr-label">Μοιραστείτε</p>
   <h2 class="qr-heading">QR Code</h2>
@@ -457,21 +327,19 @@
   <p class="qr-note">Σκανάρετε για να ανοίξετε<br>το site σε οποιαδήποτε συσκευή</p>
 </section>
 
-<!-- BOTTOM FOOTER BAR -->
 <footer class="footer-bar">
-  <a href="tel:+30" title="Τηλέφωνο">
+  <a href="tel:+306982835588" title="Τηλέφωνο">
     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.56a16 16 0 0 0 5.55 5.55l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
   </a>
-  <a href="mailto:" title="Email">
+  <a href="mailto:mariajtamp@gmail.com" title="Email">
     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
   </a>
-  <a href="https://instagram.com" target="_blank" title="Instagram">
+  <a href="https://www.instagram.com/maria.tampratzi?igsh=MW5tNzBpY3d1YThjdg==" target="_blank" title="Instagram">
     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
   </a>
 </footer>
 
 <script>
-  // ── Page navigation
   let current = 'home';
 
   function goTo(id) {
@@ -484,11 +352,9 @@
     current = id;
   }
 
-  // ── Drawer
   function openDrawer()  { document.getElementById('drawer').classList.add('open'); }
   function closeDrawer() { document.getElementById('drawer').classList.remove('open'); }
 
-  // ── Swipe gesture (mobile)
   let touchStartX = 0;
   document.addEventListener('touchstart', e => { touchStartX = e.changedTouches[0].clientX; });
   document.addEventListener('touchend', e => {
@@ -497,7 +363,6 @@
     if (dx > 60)  closeDrawer();
   });
 
-  // ── QR Code generation
   window.addEventListener('load', () => {
     const url = window.location.href;
     document.getElementById('site-url').textContent = url;
